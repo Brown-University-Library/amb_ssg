@@ -1,0 +1,31 @@
+{% macro record_card(record, compact=false) %}
+<article class="record-card{% if compact %} record-card--compact{% endif %}">
+    <a
+        class="record-card__image-link"
+        href="{{ get_url(path='collection/' ~ record.slug, trailing_slash=true) }}"
+        aria-label="View the catalog record for {{ record.title }}"
+    >
+        {% if record.has_image %}
+        <img
+            class="record-card__image"
+            src="{{ get_url(path='images/collection/' ~ record.slug ~ '.webp') }}"
+            alt="{{ record.image_alt }}"
+            loading="lazy"
+            decoding="async"
+        >
+        {% else %}
+        <span class="record-card__placeholder" aria-hidden="true">Image unavailable</span>
+        {% endif %}
+    </a>
+    <div class="record-card__body">
+        <p class="record-card__id">{{ record.item_id }}</p>
+        <h3 class="record-card__title">
+            <a href="{{ get_url(path='collection/' ~ record.slug, trailing_slash=true) }}">{{ record.title }}</a>
+        </h3>
+        <p class="record-card__artist">{{ record.artist }}</p>
+        {% if record.artist_dates %}
+        <p class="record-card__dates">{{ record.artist_dates }}</p>
+        {% endif %}
+    </div>
+</article>
+{% endmacro record_card %}

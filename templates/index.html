@@ -1,0 +1,81 @@
+{% extends "amb-base.html" %}
+{% import "macros/collection.html" as collection_macros %}
+
+{% block amb_content %}
+{% set collection = load_data(path="data/collection_records.json") %}
+<section class="amb-hero">
+    <div class="amb-hero__copy">
+        <p class="amb-eyebrow">Brown University Library</p>
+        <h1>Annmary Brown Memorial Collection</h1>
+        <p class="amb-hero__lede">
+            Explore {{ collection.record_count }} European and American paintings
+            collected by Civil War veteran, bibliophile, and collector Rush
+            Christopher Hawkins.
+        </p>
+        <div class="amb-actions">
+            <a class="amb-button" href="{{ get_url(path='search', trailing_slash=true) }}">Search the collection</a>
+            <a class="amb-button amb-button--secondary" href="{{ get_url(path='about', trailing_slash=true) }}">About the memorial</a>
+        </div>
+    </div>
+    <figure class="amb-hero__art">
+        <img
+            src="{{ get_url(path='images/collection/ab-156.webp') }}"
+            alt="Caricature of a Hawkins Zouave by Mullen"
+            width="848"
+            height="1200"
+        >
+    </figure>
+</section>
+
+<section class="explore-panel" aria-labelledby="explore-heading">
+    <div>
+        <p class="amb-eyebrow">Explore</p>
+        <h2 id="explore-heading">Find a work</h2>
+    </div>
+    <div class="explore-grid">
+        <a class="explore-link" href="{{ get_url(path='browse/artists', trailing_slash=true) }}">
+            <span class="explore-link__number">A–Z</span>
+            <strong>Browse artists</strong>
+            <span>View the catalog alphabetically by artist.</span>
+        </a>
+        <a class="explore-link" href="{{ get_url(path='browse/titles', trailing_slash=true) }}">
+            <span class="explore-link__number">A–Z</span>
+            <strong>Browse titles</strong>
+            <span>View the catalog alphabetically by title.</span>
+        </a>
+        <a class="explore-link" href="{{ get_url(path='search', trailing_slash=true) }}">
+            <span class="explore-link__number">151</span>
+            <strong>Search records</strong>
+            <span>Search artist, title, and nationality.</span>
+        </a>
+    </div>
+</section>
+
+<section class="amb-section" aria-labelledby="collection-sample-heading">
+    <div class="amb-section__heading">
+        <div>
+            <p class="amb-eyebrow">From the catalog</p>
+            <h2 id="collection-sample-heading">A first look</h2>
+        </div>
+        <a href="{{ get_url(path='collection', trailing_slash=true) }}">View the full catalog</a>
+    </div>
+    <div class="record-grid">
+        {% for record in collection.records | slice(end=6) %}
+            {{ collection_macros::record_card(record=record) }}
+        {% endfor %}
+    </div>
+</section>
+
+<section class="history-callout">
+    <div>
+        <p class="amb-eyebrow">The memorial</p>
+        <h2>A collection made in remembrance</h2>
+    </div>
+    <p>
+        Rush Christopher Hawkins built the memorial for his wife, Annmary Brown
+        Hawkins. Its history brings together paintings, rare books, family
+        history, and the story of a distinctive Providence building.
+    </p>
+    <a class="amb-button amb-button--secondary" href="{{ get_url(path='early-memorial', trailing_slash=true) }}">Read the history</a>
+</section>
+{% endblock amb_content %}

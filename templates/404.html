@@ -1,0 +1,12 @@
+{% extends "amb-base.html" %}
+
+{% block amb_content %}
+<article class="amb-prose">
+    <header class="amb-page-header">
+        <p class="amb-eyebrow">404</p>
+        <h1>Page not found</h1>
+        <p class="amb-page-intro">The requested page is not part of this collection site.</p>
+    </header>
+    <p><a class="amb-button" href="{{ get_url(path='/', trailing_slash=true) }}">Return to the collection home page</a></p>
+</article>
+{% endblock amb_content %}

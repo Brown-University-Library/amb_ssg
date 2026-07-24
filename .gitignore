@@ -1,0 +1,6 @@
+.DS_Store
+.work/
+private-input/
+__pycache__/
+*.pyc
+

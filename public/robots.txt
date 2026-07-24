@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://library.brown.edu/collections/amb/sitemap.xml

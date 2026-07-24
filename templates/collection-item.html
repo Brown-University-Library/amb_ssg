@@ -1,0 +1,77 @@
+{% extends "amb-base.html" %}
+
+{% block amb_content %}
+<nav class="amb-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ get_url(path='collection', trailing_slash=true) }}">Collection</a>
+    <span aria-hidden="true">/</span>
+    <span>{{ page.extra.item_id }}</span>
+</nav>
+
+<article class="item-detail">
+    <div class="item-detail__visual">
+        {% if page.extra.has_image %}
+        <img
+            src="{{ get_url(path=page.extra.image) }}"
+            alt="{{ page.extra.image_alt }}"
+            decoding="async"
+        >
+        {% else %}
+        <div class="item-detail__placeholder">Image unavailable</div>
+        {% endif %}
+    </div>
+
+    <div class="item-detail__summary">
+        <p class="amb-eyebrow">{{ page.extra.item_id }}</p>
+        <h1>{{ page.title }}</h1>
+        <p class="item-detail__artist">{{ page.extra.artist }}</p>
+        {% if page.extra.artist_dates %}
+        <p class="item-detail__dates">{{ page.extra.artist_dates }}</p>
+        {% endif %}
+
+        <dl class="metadata-list metadata-list--primary">
+            {% if page.extra.nationality %}<dt>Nationality</dt><dd>{{ page.extra.nationality }}</dd>{% endif %}
+            {% if page.extra.time_period %}<dt>Period</dt><dd>{{ page.extra.time_period }}</dd>{% endif %}
+            {% if page.extra.artwork_date %}<dt>Date</dt><dd>{{ page.extra.artwork_date }}</dd>{% endif %}
+            {% if page.extra.medium %}<dt>Medium</dt><dd>{{ page.extra.medium }}</dd>{% endif %}
+            {% if page.extra.dimensions %}<dt>Dimensions</dt><dd>{{ page.extra.dimensions }}</dd>{% endif %}
+        </dl>
+    </div>
+</article>
+
+<div class="item-record">
+    <section aria-labelledby="record-heading">
+        <h2 id="record-heading">Collection record</h2>
+        <dl class="metadata-list">
+            {% if page.extra.inventory_id %}<dt>Inventory identifier</dt><dd>{{ page.extra.inventory_id }}</dd>{% endif %}
+            {% if page.extra.acquisition_date %}<dt>Acquisition date</dt><dd>{{ page.extra.acquisition_date }}</dd>{% endif %}
+            {% if page.extra.provenance %}<dt>Provenance</dt><dd>{{ page.extra.provenance }}</dd>{% endif %}
+            {% if page.extra.library %}<dt>Library</dt><dd>{{ page.extra.library }}</dd>{% endif %}
+            {% if page.extra.room %}<dt>Room</dt><dd>{{ page.extra.room }}</dd>{% endif %}
+            {% if page.extra.location %}<dt>Location note</dt><dd>{{ page.extra.location }}</dd>{% endif %}
+            {% if page.extra.formats %}<dt>Reproduction formats noted in the record</dt><dd>{{ page.extra.formats }}</dd>{% endif %}
+        </dl>
+    </section>
+
+    {% if page.extra.catalog_entry or page.extra.catalog_artist or page.extra.catalog_dates or page.extra.catalog_school or page.extra.catalog_note or page.extra.catalog_title or page.extra.description or page.extra.references %}
+    <section aria-labelledby="catalog-heading">
+        <h2 id="catalog-heading">1913 catalog information</h2>
+        <dl class="metadata-list">
+            {% if page.extra.catalog_entry %}<dt>Catalog entry</dt><dd>{{ page.extra.catalog_entry }}</dd>{% endif %}
+            {% if page.extra.catalog_artist %}<dt>Artist as cataloged</dt><dd>{{ page.extra.catalog_artist }}</dd>{% endif %}
+            {% if page.extra.catalog_dates %}<dt>Dates as cataloged</dt><dd>{{ page.extra.catalog_dates }}</dd>{% endif %}
+            {% if page.extra.catalog_school %}<dt>School</dt><dd>{{ page.extra.catalog_school }}</dd>{% endif %}
+            {% if page.extra.catalog_title %}<dt>Title as cataloged</dt><dd>{{ page.extra.catalog_title }}</dd>{% endif %}
+            {% if page.extra.catalog_note %}<dt>Artist note</dt><dd>{{ page.extra.catalog_note }}</dd>{% endif %}
+            {% if page.extra.description %}<dt>Description</dt><dd>{{ page.extra.description }}</dd>{% endif %}
+            {% if page.extra.references %}<dt>References</dt><dd>{{ page.extra.references }}</dd>{% endif %}
+        </dl>
+    </section>
+    {% endif %}
+</div>
+
+<footer class="item-footer">
+    <a href="{{ get_url(path='browse/artists', trailing_slash=true) }}">Browse all artists</a>
+    <a href="{{ get_url(path='browse/titles', trailing_slash=true) }}">Browse all titles</a>
+    <a href="https://library.brown.edu/info/hay/publication/">Rights and reproductions</a>
+</footer>
+{% endblock amb_content %}

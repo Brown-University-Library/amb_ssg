@@ -1,0 +1,54 @@
+{% extends "amb-base.html" %}
+
+{% block amb_content %}
+<header class="amb-page-header amb-page-header--wide">
+    <p class="amb-eyebrow">The catalog</p>
+    <h1>{{ page.title }}</h1>
+    <p class="amb-page-intro">{{ page.description }}</p>
+</header>
+
+<section class="collection-search" aria-labelledby="search-form-heading">
+    <h2 id="search-form-heading" class="visually-hidden">Collection search form</h2>
+    <form
+        id="collection-search-form"
+        class="collection-search__form"
+        role="search"
+        data-records-url="{{ get_url(path='search/collection-records.json', cachebust=true) }}"
+        data-collection-url="{{ get_url(path='collection', trailing_slash=true) }}"
+        data-site-url="{{ get_url(path='/', trailing_slash=true) }}"
+    >
+        <label for="collection-search-query">Artist, title, or nationality</label>
+        <div class="collection-search__controls">
+            <input
+                id="collection-search-query"
+                name="q"
+                type="search"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="For example: Rubens, landscape, Dutch"
+                disabled
+            >
+            <button id="collection-search-submit" type="submit" disabled>Search</button>
+        </div>
+        <p class="collection-search__help">
+            Search combines direct phrase matching with Elasticlunr word matching.
+        </p>
+    </form>
+
+    <noscript>
+        <p class="search-message">JavaScript is required for collection search. You can still
+        <a href="{{ get_url(path='browse/artists', trailing_slash=true) }}">browse by artist</a>
+        or <a href="{{ get_url(path='browse/titles', trailing_slash=true) }}">browse by title</a>.
+        </p>
+    </noscript>
+
+    <p id="collection-search-status" class="search-message" role="status" aria-live="polite">
+        Enter a word or phrase to search the collection.
+    </p>
+    <div id="collection-search-results" class="search-results" aria-live="polite"></div>
+</section>
+
+<script defer src="{{ get_url(path='search/elasticlunr.min.js', cachebust=true) }}"></script>
+<script defer src="{{ get_url(path='js/collection-search-core.js', cachebust=true) }}"></script>
+<script defer src="{{ get_url(path='js/collection-search.js', cachebust=true) }}"></script>
+{% endblock amb_content %}

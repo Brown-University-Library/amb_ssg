@@ -1,0 +1,11 @@
+<figure class="narrative-figure{% if class %} {{ class }}{% endif %}">
+    <img
+        src="{{ get_url(path='images/narrative/' ~ src) }}"
+        alt="{{ alt }}"
+        loading="lazy"
+        decoding="async"
+    >
+    {% if caption %}
+    <figcaption>{{ caption }}</figcaption>
+    {% endif %}
+</figure>

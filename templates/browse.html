@@ -1,0 +1,47 @@
+{% extends "amb-base.html" %}
+{% import "macros/collection.html" as collection_macros %}
+
+{% block amb_content %}
+{% set collection = load_data(path="data/collection_records.json") %}
+{% if page.extra.browse_by == "artist" %}
+    {% set records = collection.records | sort(attribute="artist_sort") %}
+    {% set letters = collection.artist_letters %}
+    {% set label = "artist" %}
+{% else %}
+    {% set records = collection.records | sort(attribute="title_sort") %}
+    {% set letters = collection.title_letters %}
+    {% set label = "title" %}
+{% endif %}
+
+<header class="amb-page-header amb-page-header--wide">
+    <p class="amb-eyebrow">The catalog</p>
+    <h1>{{ page.title }}</h1>
+    <p class="amb-page-intro">{{ page.description }}</p>
+</header>
+
+<nav class="alphabet-nav" aria-label="Available {{ label }} initials">
+    {% for letter in letters %}
+    <a href="#letter-{{ letter | lower }}">{{ letter }}</a>
+    {% endfor %}
+</nav>
+
+<div class="browse-groups">
+    {% set_global current_letter = "" %}
+    {% for record in records %}
+        {% if page.extra.browse_by == "artist" %}
+            {% set initial = record.artist_initial %}
+        {% else %}
+            {% set initial = record.title_initial %}
+        {% endif %}
+        {% if initial != current_letter %}
+            {% if not loop.first %}</div></section>{% endif %}
+            {% set_global current_letter = initial %}
+            <section class="browse-group" aria-labelledby="letter-{{ initial | lower }}">
+                <h2 id="letter-{{ initial | lower }}">{{ initial }}</h2>
+                <div class="record-grid">
+        {% endif %}
+                    {{ collection_macros::record_card(record=record, compact=true) }}
+        {% if loop.last %}</div></section>{% endif %}
+    {% endfor %}
+</div>
+{% endblock amb_content %}

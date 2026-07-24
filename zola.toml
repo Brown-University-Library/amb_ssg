@@ -1,0 +1,54 @@
+base_url = "https://library.brown.edu/collections/amb"
+title = "Annmary Brown Memorial Collection"
+description = "European and American paintings collected by Rush Christopher Hawkins for the Annmary Brown Memorial."
+default_language = "en"
+theme = "tabi"
+compile_sass = true
+minify_html = true
+build_search_index = false
+generate_feeds = false
+output_dir = "public"
+
+[markdown]
+smart_punctuation = true
+external_links_class = "external"
+external_links_target_blank = false
+
+[markdown.highlighting]
+theme = "catppuccin-frappe"
+style = "class"
+error_on_missing_language = true
+
+[link_checker]
+internal_level = "error"
+external_level = "warn"
+skip_prefixes = [
+  "https://collections.library.cornell.edu/cgi-bin/moa/",
+  "https://library.brown.edu/",
+  "https://search.library.brown.edu/",
+]
+
+[extra]
+override_serif_with_sans = false
+theme_switcher = true
+default_theme = ""
+skin = "red"
+browser_theme_color = ["#f7f2ea", "#1d1916"]
+stylesheets = ["amb.css"]
+show_author = false
+show_reading_time = false
+show_date = false
+show_remote_changes = false
+show_remote_source = false
+copy_button = false
+quick_navigation_buttons = true
+enable_csp = true
+favicon_emoji = ""
+
+menu = [
+  { name = "Collection", url = "collection", trailing_slash = true },
+  { name = "Artists", url = "browse/artists", trailing_slash = true },
+  { name = "Titles", url = "browse/titles", trailing_slash = true },
+  { name = "Search", url = "search", trailing_slash = true },
+  { name = "About", url = "about", trailing_slash = true },
+]

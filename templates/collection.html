@@ -1,0 +1,24 @@
+{% extends "amb-base.html" %}
+{% import "macros/collection.html" as collection_macros %}
+
+{% block amb_content %}
+{% set collection = load_data(path="data/collection_records.json") %}
+<header class="amb-page-header amb-page-header--wide">
+    <p class="amb-eyebrow">The catalog</p>
+    <h1>{{ section.title }}</h1>
+    <p class="amb-page-intro">{{ section.description }}</p>
+</header>
+
+<nav class="catalog-tools" aria-label="Catalog views">
+    <a href="{{ get_url(path='browse/artists', trailing_slash=true) }}">Browse by artist</a>
+    <a href="{{ get_url(path='browse/titles', trailing_slash=true) }}">Browse by title</a>
+    <a href="{{ get_url(path='search', trailing_slash=true) }}">Search</a>
+</nav>
+
+<p class="catalog-count">{{ collection.record_count }} works, in catalog-number order</p>
+<div class="record-grid">
+    {% for record in collection.records %}
+        {{ collection_macros::record_card(record=record) }}
+    {% endfor %}
+</div>
+{% endblock amb_content %}
