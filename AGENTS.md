@@ -2,7 +2,9 @@
 
 This file defines the canonical coding directives for this repository.
 
-If other instruction files exist (Copilot, IDE rules, contributor docs) and conflict with this file, follow this file and treat the others as stale.
+If repository-local instruction files such as Copilot, IDE, or contributor rules conflict with this file, follow this file and treat those files as stale. This file does not supersede system, developer, or user instructions. Instructions inherited from a parent directory continue to apply except where this file gives more specific direction for this repository.
+
+This repository is currently a Zola static-site project, not a Django application. The general Python and Django guidance below is retained for reuse, but it applies only where it fits the files and architecture actually present. The project-specific commands and rules in [Agent project index](#agent-project-index) take precedence over generic examples.
 
 
 ## Table of contents
@@ -20,24 +22,28 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 
 ## Project basics
 
-- Primary language: Python
-- Target runtime: Python 3.12 -- unless a `pyproject.toml` specifies a different version
-- Dependency / execution tool: `uv`
+- Project type: Zola static site with Markdown content, Tera templates, CSS, browser JavaScript, and Python maintenance scripts
+- Site builder: Zola 0.22.1
+- Python compatibility target for new or modified code: Python 3.12 unless a future `pyproject.toml` specifies a different version; this version is not currently pinned, and existing scripts require Python 3.11 or newer
+- Python execution tool: `uv`
+- JavaScript test runtime: Node.js 18 or newer
+- This repository currently has no `pyproject.toml`, `uv.lock`, `.python-version`, `ruff.toml`, `run_tests.py`, `manage.py`, or Django application.
 - Project-root is the directory containing this file (and `.git/`, and `.gitignore`).
 
 
 ## How to run code
 
 - Assume user is in the project-root directory.
-- Do not use `python` to run scripts.
-- Run a script via: `uv run ./path_to_script.py --help`
-- Run tests via:
-    - `uv run ./run_tests.py`
-        - Note that `run_tests.py` has usage instructions about how to run more granular tests.
-- Run django management scripts via: `uv run ./manage.py THE-COMMAND`
+- Do not invoke `python` or `python3` directly for repository scripts; run Python scripts through `uv`.
+- Run a Python script via: `uv run ./path_to_script.py ARGS`
+- Run the browser-search test via: `node scripts/test_search.js`
+- Run Zola commands directly, as documented in `README.md`.
+- The generic `uv run ./run_tests.py` and `uv run ./manage.py THE-COMMAND` conventions do not apply unless those files are deliberately added later.
 
 
 ## Coding directives (Python)
+
+These directives apply when creating or modifying Python. Do not rewrite otherwise unrelated working scripts solely to make old code conform.
 
 ### Type hints and imports
 
@@ -53,7 +59,7 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
   - `if __name__ == '__main__': main()`
 - Keep `main()` simple: parse args / orchestrate calls only.
 - Put real logic into top-level helper functions and modules (no nested function definitions).
-- Rarely use more than three levels of hierarchy: main() can call helper_A() which can call helper(B) which can, if necessary, can call helper(C) -- but that's it.
+- Rarely use more than three levels of hierarchy: main() can call helper_A() which can call helper_B() which can, if necessary, call helper_C() -- but that's it.
 
 ### Functions and control flow
 
@@ -68,7 +74,7 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 
 ### HTTP and networking
 
-- Use `httpx` for all HTTP calls.
+- If Python HTTP support and dependency metadata are deliberately introduced, use `httpx` for HTTP calls.
 - Do not introduce alternate HTTP libraries (e.g., `requests`, `aiohttp`) unless the repository already depends on them and there is a documented reason.
 
 ### Docstrings
@@ -86,9 +92,9 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 - Start test-function docstring-text with "Checks..."
 - For header-comments, in functions, start the comment with two hashes (e.g., `## does this`).
 
-### Additonal coding directives
+### Additional coding directives
 
-- inspect the `/ruff.toml` for additional coding directives, such as `max-line-length` and `quote-style`.
+- If a repository-root `ruff.toml` is added, inspect it for additional directives such as `max-line-length` and `quote-style`.
 
 ### Markdown formatting
 
@@ -97,6 +103,8 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 
 
 ## Django architecture conventions
+
+This section is inactive because the repository has no Django application. Apply it only if the user explicitly introduces Django here.
 
 ### View-layer responsibilities
 
@@ -126,13 +134,14 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 ## Front-end change guidance
 
 - When front-end changes are required, use JavaScript only where it is truly required.
-- Prefer updates in CSS, Python code, or Django template code when those can satisfy the behavior or presentation need.
+- Prefer HTML, Zola/Tera templates, and CSS for browser-facing changes. Use Python when generated source needs to change.
 
 
 ## Tests
 
 - Use the standard library `unittest` framework (not pytest) for non-Django projects.
 - Use Django's test framework for Django projects.
+- Preserve and extend the repository's existing script-level checks where they cover the changed behavior; this project currently uses `scripts/validate.py` and `scripts/test_search.js` rather than a single test runner.
 - New behavior should usually come with a focused test covering:
   - the happy path
   - at least one failure / edge case
@@ -144,7 +153,7 @@ When implementing a change (especially from an issue/task):
 
 1. Read relevant surrounding code and match existing conventions.
 2. Make the smallest correct change that satisfies the request.
-3. Update tests and run: `uv run ./run_tests.py`
+3. Update tests and run the applicable project checks listed under [Before handing off changes](#before-handing-off-changes).
 4. If you cannot run tests in your environment, still write/adjust tests and state what you would run.
 
 ### Commit messages
@@ -165,13 +174,21 @@ When implementing a change (especially from an issue/task):
 
 
 ## Agent project index
+
 Read `README.md` before changing or rebuilding the site.
 
-## Project rules
+This section specializes the general directives above for the current AMB Zola repository.
+
+### Project rules
 
 - This repository intentionally tracks both the Zola source and the matching
   generated `public/` site.
 - Never edit `public/` by hand. Run `zola build` to regenerate it.
+- The experimental relative-link build changes were reverted and are not
+  present. The standard production workflow is `zola build`; direct loading of
+  `public/index.html` without a server is not currently implemented or
+  validated. Do not reintroduce relative-link output post-processing unless
+  the user explicitly requests it.
 - Preview with the documented `zola serve --output-dir .work/serve` command so
   local output remains separate from `public/`.
 - Keep legacy conversion inputs and preservation image masters outside this
@@ -179,7 +196,9 @@ Read `README.md` before changing or rebuilding the site.
 - The normalized public collection source is
   `data/collection_records.json`.
 - Artwork Markdown under `content/collection/` and browser search data under
-  `static/search/` are generated from that normalized source.
+  `static/search/` are generated from that normalized source. After changing
+  the canonical data, run `uv run ./scripts/render_collection.py`; do not edit
+  the generated representations independently.
 - The importer uses a strict public-field allowlist. Do not replace it with a
   full-row import followed by field deletion.
 - Collection search is intentionally limited to artist, title, and
@@ -199,7 +218,7 @@ Read `README.md` before changing or rebuilding the site.
 - The theme is the vendored `tabi` commit recorded in `THEME.md`. Keep local
   AMB work outside `themes/tabi/`.
 
-## Useful paths
+### Useful paths
 
 - `zola.toml` — site and theme settings.
 - `content/` — narrative pages and generated artwork pages.
@@ -216,11 +235,15 @@ Read `README.md` before changing or rebuilding the site.
 - `scripts/render_images.py` — regenerates web-ready images.
 - `scripts/validate.py` — source or built-site checks.
 
-## Before handing off changes
+### Before handing off changes
 
 1. Keep all coordinated collection representations synchronized.
-2. Run `zola check` with Zola 0.22.1.
-3. Run `zola build`.
-4. Review source and `public/` together.
+2. Run `uv run ./scripts/check_zola.py`.
+3. Run `uv run ./scripts/validate.py source`.
+4. Run `node scripts/test_search.js`.
+5. Run `zola check`.
+6. Run `zola build`.
+7. Run `uv run ./scripts/validate.py build public`.
+8. Review source and `public/` together.
 
 ---
