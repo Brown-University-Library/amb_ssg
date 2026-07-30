@@ -1,493 +1,493 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="https://library.brown.edu/collections/amb/sitemap_style.xsl" type="text/xsl"?>
+<?xml-stylesheet href="http://127.0.0.1/amb_ssg/sitemap_style.xsl" type="text/xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://library.brown.edu/collections/amb/</loc>
+        <loc>http://127.0.0.1/amb_ssg/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/about-the-database/</loc>
+        <loc>http://127.0.0.1/amb_ssg/about-the-database/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/about/</loc>
+        <loc>http://127.0.0.1/amb_ssg/about/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/browns-of-rhode-island/</loc>
+        <loc>http://127.0.0.1/amb_ssg/browns-of-rhode-island/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/browse/artists/</loc>
+        <loc>http://127.0.0.1/amb_ssg/browse/artists/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/browse/titles/</loc>
+        <loc>http://127.0.0.1/amb_ssg/browse/titles/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/catalog-introduction/</loc>
+        <loc>http://127.0.0.1/amb_ssg/catalog-introduction/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-1/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-1/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-10/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-10/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-100/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-100/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-101/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-101/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-102/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-102/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-103/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-103/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-104/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-104/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-105/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-105/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-106/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-106/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-107/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-107/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-108/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-108/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-109/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-109/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-11/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-11/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-110/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-110/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-111/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-111/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-112/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-112/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-113/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-113/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-114/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-114/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-115/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-115/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-116/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-116/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-117/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-117/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-118/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-118/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-119/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-119/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-12/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-12/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-120/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-120/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-121/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-121/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-122/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-122/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-123/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-123/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-124/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-124/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-125/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-125/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-126/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-126/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-127/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-127/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-128/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-128/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-129/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-129/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-13/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-13/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-130/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-130/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-131/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-131/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-132/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-132/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-133/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-133/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-134/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-134/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-135/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-135/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-136/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-136/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-137/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-137/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-138/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-138/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-139/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-139/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-14/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-14/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-140/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-140/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-141/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-141/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-142/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-142/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-143/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-143/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-144/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-144/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-145/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-145/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-146/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-146/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-148/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-148/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-149/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-149/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-15/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-15/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-150/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-150/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-151/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-151/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-152/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-152/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-153/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-153/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-154/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-154/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-155/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-155/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-156/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-156/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-158/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-158/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-16/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-16/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-17/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-17/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-18/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-18/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-19/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-19/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-2/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-2/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-20/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-20/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-21/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-21/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-23/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-23/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-24/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-24/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-26/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-26/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-27/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-27/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-28/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-28/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-29/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-29/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-3/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-3/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-30/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-30/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-31/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-31/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-32/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-32/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-33/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-33/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-34/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-34/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-35/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-35/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-36/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-36/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-37/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-37/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-39/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-39/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-4/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-4/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-40/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-40/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-41/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-41/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-42/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-42/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-43/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-43/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-44/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-44/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-45/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-45/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-46/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-46/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-47/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-47/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-48/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-48/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-49/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-49/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-5/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-5/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-50/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-50/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-51/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-51/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-52/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-52/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-53/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-53/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-54/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-54/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-55/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-55/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-56/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-56/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-57/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-57/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-58/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-58/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-59/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-59/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-6/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-6/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-60/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-60/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-61/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-61/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-63/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-63/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-64/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-64/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-65/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-65/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-66/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-66/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-67/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-67/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-68/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-68/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-69/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-69/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-7/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-7/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-70/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-70/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-71/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-71/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-72/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-72/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-73/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-73/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-74/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-74/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-75/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-75/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-76/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-76/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-77/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-77/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-78/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-78/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-79/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-79/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-8/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-8/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-80/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-80/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-81/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-81/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-82/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-82/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-83/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-83/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-84/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-84/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-85/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-85/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-86/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-86/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-88/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-88/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-89/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-89/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-9/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-9/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-90/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-90/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-91/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-91/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-92/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-92/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-93/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-93/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-94/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-94/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-95/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-95/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-96/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-96/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-97/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-97/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-98/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-98/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/collection/ab-99/</loc>
+        <loc>http://127.0.0.1/amb_ssg/collection/ab-99/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/early-memorial-rooms/</loc>
+        <loc>http://127.0.0.1/amb_ssg/early-memorial-rooms/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/early-memorial/</loc>
+        <loc>http://127.0.0.1/amb_ssg/early-memorial/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/hawkins-writings/</loc>
+        <loc>http://127.0.0.1/amb_ssg/hawkins-writings/</loc>
     </url>
     <url>
-        <loc>https://library.brown.edu/collections/amb/search/</loc>
+        <loc>http://127.0.0.1/amb_ssg/search/</loc>
     </url>
 </urlset>
