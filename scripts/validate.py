@@ -1,5 +1,21 @@
-#!/usr/bin/env python3
-"""Validate the AMB Zola source or a generated site."""
+# /// script
+# requires-python = ">=3.12,<3.13"
+# ///
+
+"""
+Validates AMB-specific source data or generated site output.
+
+Usage:
+    uv run ./scripts/validate.py source
+    uv run ./scripts/validate.py build public
+
+These checks are optional: Zola can check, serve, or build the site without
+running this script. Run the source check after changing collection Markdown,
+search data, or images. Run the build check after creating production output
+and before publishing it. The script does not modify files; it reports
+collection inconsistencies, missing output, broken internal links, and local or
+private material that should not enter the deployable site.
+"""
 
 from __future__ import annotations
 
