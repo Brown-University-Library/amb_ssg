@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "harding, chester (attributed)"
+title_sort = "mary bowen"
+artist_initial = "H"
+title_initial = "M"
 item_id = "AB 122"
 inventory_id = "P-303"
 artist = "Harding, Chester (attributed)"

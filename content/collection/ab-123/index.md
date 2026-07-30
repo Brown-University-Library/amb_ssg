@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous, american school"
+title_sort = "abby mason brown"
+artist_initial = "A"
+title_initial = "A"
 item_id = "AB 123"
 inventory_id = "P-296"
 artist = "Anonymous, American School"

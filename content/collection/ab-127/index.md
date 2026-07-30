@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous, american school"
+title_sort = "robert grenville brown, 1849-1896"
+artist_initial = "A"
+title_initial = "R"
 item_id = "AB 127"
 inventory_id = "C-1769"
 artist = "Anonymous, American School"

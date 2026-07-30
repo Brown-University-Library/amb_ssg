@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "blondel, jacob d."
+title_sort = "portrait of mrs. annmary brown hawkins"
+artist_initial = "B"
+title_initial = "P"
 item_id = "AB 64"
 inventory_id = "P-283"
 artist = "Blondel, Jacob D."

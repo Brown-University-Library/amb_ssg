@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "mayan, theodore henri"
+title_sort = "spring morning"
+artist_initial = "M"
+title_initial = "S"
 item_id = "AB 96"
 inventory_id = "C-1697"
 artist = "Mayan, Theodore Henri"

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "achini, angiolo"
+title_sort = "guisseppi garibaldi"
+artist_initial = "A"
+title_initial = "G"
 item_id = "AB 53"
 inventory_id = "C-1734"
 artist = "Achini, Angiolo"

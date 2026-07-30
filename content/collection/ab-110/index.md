@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "weeks, edwin lord"
+title_sort = "the golden temple"
+artist_initial = "W"
+title_initial = "T"
 item_id = "AB 110"
 inventory_id = "none on file"
 artist = "Weeks, Edwin Lord"

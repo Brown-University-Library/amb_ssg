@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "rapetti"
+title_sort = "the looking glass"
+artist_initial = "R"
+title_initial = "T"
 item_id = "AB 106"
 inventory_id = "C-1688"
 artist = "Rapetti"

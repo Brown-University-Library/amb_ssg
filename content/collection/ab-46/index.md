@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "stuart, gilbert, school of"
+title_sort = "benjamin west, p.r.a."
+artist_initial = "S"
+title_initial = "B"
 item_id = "AB 46"
 inventory_id = "P-275"
 artist = "Stuart, Gilbert, School of"

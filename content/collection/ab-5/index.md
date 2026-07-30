@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "after du jardin, karel"
+title_sort = "italian village scene"
+artist_initial = "A"
+title_initial = "I"
 item_id = "AB 5"
 inventory_id = "C-1738"
 artist = "After Du Jardin, Karel"

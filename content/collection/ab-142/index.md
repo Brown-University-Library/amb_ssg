@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "kingsley, elbridge"
+title_sort = "landscape"
+artist_initial = "K"
+title_initial = "L"
 item_id = "AB 142"
 inventory_id = "C-1797"
 artist = "Kingsley, Elbridge"

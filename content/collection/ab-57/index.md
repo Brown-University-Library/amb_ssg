@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "barbaglia, giuseppe"
+title_sort = "a morning with parini"
+artist_initial = "B"
+title_initial = "A"
 item_id = "AB 57"
 inventory_id = ""
 artist = "Barbaglia, Giuseppe"

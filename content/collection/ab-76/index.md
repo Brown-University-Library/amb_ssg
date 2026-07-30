@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "dufour, camille"
+title_sort = "vetheuil, seine-et-oise"
+artist_initial = "D"
+title_initial = "V"
 item_id = "AB 76"
 inventory_id = "none on file"
 artist = "Dufour, Camille"

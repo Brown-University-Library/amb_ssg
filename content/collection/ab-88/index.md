@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "irving, john beaufain"
+title_sort = "an impromptu battle"
+artist_initial = "I"
+title_initial = "A"
 item_id = "AB 88"
 inventory_id = "C-1775"
 artist = "Irving, John Beaufain"

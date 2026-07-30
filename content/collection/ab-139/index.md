@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "harpignies, henri joseph"
+title_sort = "ruines f"
+artist_initial = "H"
+title_initial = "R"
 item_id = "AB 139"
 inventory_id = "C-1807"
 artist = "Harpignies, Henri Joseph"

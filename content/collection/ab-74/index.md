@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "dalbono, edoardo"
+title_sort = "a neapolitan flower girl"
+artist_initial = "D"
+title_initial = "A"
 item_id = "AB 74"
 inventory_id = "C-1715"
 artist = "Dalbono, Edoardo"

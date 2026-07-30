@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "german school"
+title_sort = "saint dorothy and the christ child"
+artist_initial = "G"
+title_initial = "S"
 item_id = "AB 151"
 inventory_id = "C-1772"
 artist = "German School"

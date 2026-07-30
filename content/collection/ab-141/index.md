@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "fontanese, antonio"
+title_sort = "mountain lake"
+artist_initial = "F"
+title_initial = "M"
 item_id = "AB 141"
 inventory_id = "C-1808"
 artist = "Fontanese, Antonio"

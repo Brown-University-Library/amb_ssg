@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "dahl, michael"
+title_sort = "portrait of a lady"
+artist_initial = "D"
+title_initial = "P"
 item_id = "AB 10"
 inventory_id = ""
 artist = "Dahl, Michael"

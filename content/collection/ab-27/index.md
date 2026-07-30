@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "mazo, juan bautista martinez del"
+title_sort = "pope innocent x (after velazquez)"
+artist_initial = "M"
+title_initial = "P"
 item_id = "AB 27"
 inventory_id = "none on file"
 artist = "Mazo, Juan Bautista Martinez del"

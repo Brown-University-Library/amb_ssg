@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "garber, daniel"
+title_sort = "in the hills"
+artist_initial = "G"
+title_initial = "I"
 item_id = "AB 78"
 inventory_id = "C-1719"
 artist = "Garber, Daniel"

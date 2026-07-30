@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "robert, hubert"
+title_sort = "landscape"
+artist_initial = "R"
+title_initial = "L"
 item_id = "AB 112"
 inventory_id = "not on file"
 artist = "Robert, Hubert"

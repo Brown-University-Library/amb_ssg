@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "barbaglia, giuseppe"
+title_sort = "the harpist"
+artist_initial = "B"
+title_initial = "T"
 item_id = "AB 58"
 inventory_id = "C-1725"
 artist = "Barbaglia, Giuseppe"

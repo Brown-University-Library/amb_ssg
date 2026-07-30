@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "sirani, elisabetta"
+title_sort = "artemisia drinking the ashes of mausolus"
+artist_initial = "S"
+title_initial = "A"
 item_id = "AB 14"
 inventory_id = "C-1705"
 artist = "Sirani, Elisabetta"

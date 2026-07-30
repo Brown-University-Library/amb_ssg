@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "barlow, myron"
+title_sort = "the reader"
+artist_initial = "B"
+title_initial = "T"
 item_id = "AB 59"
 inventory_id = "none on file"
 artist = "Barlow, Myron"

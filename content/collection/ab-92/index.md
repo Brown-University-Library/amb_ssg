@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "joubert, l."
+title_sort = "french river landscape"
+artist_initial = "J"
+title_initial = "F"
 item_id = "AB 92"
 inventory_id = "none on file"
 artist = "Joubert, L."

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "west, benjamin, p.r.a."
+title_sort = "british commerce"
+artist_initial = "W"
+title_initial = "B"
 item_id = "AB 52"
 inventory_id = "C-1733"
 artist = "West, Benjamin, P.R.A."

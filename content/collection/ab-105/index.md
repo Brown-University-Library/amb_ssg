@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "rapetti"
+title_sort = "a woman playing a guitar"
+artist_initial = "R"
+title_initial = "A"
 item_id = "AB 105"
 inventory_id = "C-1689"
 artist = "Rapetti"

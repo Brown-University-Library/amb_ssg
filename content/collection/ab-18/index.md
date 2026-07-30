@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "frothingham, james"
+title_sort = "portrait of john trumbull"
+artist_initial = "F"
+title_initial = "P"
 item_id = "AB 18"
 inventory_id = ""
 artist = "Frothingham, James"

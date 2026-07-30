@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "codazzi, school of"
+title_sort = "brigands fighting in a roman ruin"
+artist_initial = "C"
+title_initial = "B"
 item_id = "AB 39"
 inventory_id = "none on file"
 artist = "Codazzi, School of"

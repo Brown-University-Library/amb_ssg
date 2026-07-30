@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "hart, william"
+title_sort = "landscape with figure and dog"
+artist_initial = "H"
+title_initial = "L"
 item_id = "AB 131"
 inventory_id = "C-1805"
 artist = "Hart, William"

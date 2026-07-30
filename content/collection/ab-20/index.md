@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "rocca, michele"
+title_sort = "innocence"
+artist_initial = "R"
+title_initial = "I"
 item_id = "AB 20"
 inventory_id = "C-1746"
 artist = "Rocca, Michele"

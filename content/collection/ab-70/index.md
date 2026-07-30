@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "burck, heinrich"
+title_sort = "madchenkopf"
+artist_initial = "B"
+title_initial = "M"
 item_id = "AB 70"
 inventory_id = "none on file"
 artist = "Burck, Heinrich"

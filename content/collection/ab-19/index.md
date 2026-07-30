@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "ibbetson, school of"
+title_sort = "english landscape"
+artist_initial = "I"
+title_initial = "E"
 item_id = "AB 19"
 inventory_id = "C-1745"
 artist = "Ibbetson, School of"

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "blondel, jacob d."
+title_sort = "little red riding hood"
+artist_initial = "B"
+title_initial = "L"
 item_id = "AB 66"
 inventory_id = "C-1707"
 artist = "Blondel, Jacob D."

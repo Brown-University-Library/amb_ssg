@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "jarvis, john wesley"
+title_sort = "portrait of nicholas brown"
+artist_initial = "J"
+title_initial = "P"
 item_id = "AB 89"
 inventory_id = "P-288"
 artist = "Jarvis, John Wesley"

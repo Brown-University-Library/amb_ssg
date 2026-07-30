@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "aze, adolph"
+title_sort = "an open-air consultation"
+artist_initial = "A"
+title_initial = "A"
 item_id = "AB 116"
 inventory_id = "C-1678"
 artist = "Aze, Adolph"

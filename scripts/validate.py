@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the portable Zola source or a generated AMB site."""
+"""Validate the AMB Zola source or a generated site."""
 
 from __future__ import annotations
 
@@ -13,7 +13,6 @@ from urllib.parse import unquote, urljoin, urlparse
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_PATH = PROJECT_ROOT / "data" / "collection_records.json"
 ABSOLUTE_PATH_PATTERNS = (
     re.compile(r"/(?:Users|home|root)/"),
     re.compile(r"/private/(?:tmp|var)/"),
@@ -24,14 +23,13 @@ LOCAL_URL_PATTERNS = (
     re.compile(r"localhost", re.IGNORECASE),
     re.compile(r"127\.0\.0\.1"),
 )
-COLLECTION_RECORD_KEYS = {
+COLLECTION_PAGE_EXTRA_KEYS = {
     "item_id",
     "inventory_id",
     "artist",
     "artist_dates",
     "nationality",
     "time_period",
-    "title",
     "artwork_date",
     "medium",
     "dimensions",
@@ -51,7 +49,6 @@ COLLECTION_RECORD_KEYS = {
     "location",
     "image",
     "number",
-    "slug",
     "artist_sort",
     "title_sort",
     "artist_initial",
@@ -184,67 +181,128 @@ def validate_internal_links(build_dir: Path) -> list[str]:
 
 def validate_source() -> list[str]:
     failures: list[str] = []
-    payload = json.loads(DATA_PATH.read_text(encoding="utf-8"))
-    records = payload.get("records", [])
-    if payload.get("record_count") != 151 or len(records) != 151:
-        failures.append("Normalized collection must contain 151 records")
-
-    ids = {record.get("item_id") for record in records}
-    if len(ids) != 151:
-        failures.append("Normalized collection identifiers must be unique")
-    for record in records:
-        if set(record) != COLLECTION_RECORD_KEYS:
-            failures.append(f"Unexpected normalized fields for {record.get('item_id')}")
-
-    pages = list((PROJECT_ROOT / "content" / "collection").glob("ab-*/index.md"))
+    pages = sorted(
+        (PROJECT_ROOT / "content" / "collection").glob("ab-*/index.md")
+    )
     if len(pages) != 151:
         failures.append(f"Expected 151 artwork Markdown pages, found {len(pages)}")
+
+    records: list[dict[str, object]] = []
+    for page_path in pages:
+        text = page_path.read_text(encoding="utf-8")
+        parts = text.split("+++", maxsplit=2)
+        if len(parts) != 3 or parts[0]:
+            failures.append(
+                f"Invalid front matter in {page_path.relative_to(PROJECT_ROOT)}"
+            )
+            continue
+        front_matter = tomllib.loads(parts[1])
+        extra = front_matter.get("extra")
+        slug = page_path.parent.name
+        if not isinstance(extra, dict):
+            failures.append(f"Missing [extra] data for {slug}")
+            continue
+        if set(extra) != COLLECTION_PAGE_EXTRA_KEYS:
+            failures.append(f"Unexpected collection-page fields for {slug}")
+            continue
+        title = front_matter.get("title")
+        if not isinstance(title, str) or not title:
+            failures.append(f"Missing collection-page title for {slug}")
+            continue
+
+        number = extra["number"]
+        item_id = extra["item_id"]
+        artist = extra["artist"]
+        if not isinstance(number, int) or not isinstance(item_id, str):
+            failures.append(f"Invalid number or item identifier for {slug}")
+            continue
+        if not isinstance(artist, str) or not artist:
+            failures.append(f"Missing collection-page artist for {slug}")
+            continue
+        if slug != f"ab-{number}" or item_id != f"AB {number}":
+            failures.append(f"Slug, number, and item identifier differ for {slug}")
+
+        expected_sort_values = {
+            "artist_sort": artist.casefold(),
+            "title_sort": title.casefold(),
+            "artist_initial": artist[:1].upper(),
+            "title_initial": title[:1].upper(),
+        }
+        for key, expected in expected_sort_values.items():
+            if extra[key] != expected:
+                failures.append(f"Invalid {key} for {item_id}")
+
+        expected_image = (
+            f"images/collection/{slug}.webp" if extra["has_image"] else ""
+        )
+        if extra["image"] != expected_image:
+            failures.append(f"Invalid image path for {item_id}")
+
+        records.append(
+            {
+                "item_id": item_id,
+                "slug": slug,
+                "number": number,
+                "artist": artist,
+                "artist_dates": extra["artist_dates"],
+                "nationality": extra["nationality"],
+                "title": title,
+                "has_image": extra["has_image"],
+                "image": extra["image"],
+            }
+        )
+
+    ids = {record["item_id"] for record in records}
+    slugs = {record["slug"] for record in records}
+    numbers = {record["number"] for record in records}
+    if len(ids) != 151 or len(slugs) != 151 or len(numbers) != 151:
+        failures.append(
+            "Collection page identifiers, slugs, and numbers must be unique"
+        )
 
     search_path = PROJECT_ROOT / "static" / "search" / "collection-records.json"
     search_payload = json.loads(search_path.read_text(encoding="utf-8"))
     search_records = search_payload.get("records", [])
-    if search_payload.get("record_count") != 151 or len(search_records) != 151:
+    if (
+        search_payload.get("schema_version") != 1
+        or search_payload.get("record_count") != 151
+        or len(search_records) != 151
+    ):
         failures.append("Browser-search data must contain 151 records")
     if {record.get("item_id") for record in search_records} != ids:
-        failures.append("Browser-search identifiers must match normalized collection")
-    normalized_by_id = {record["item_id"]: record for record in records}
+        failures.append("Browser-search identifiers must match collection pages")
+    pages_by_id = {record["item_id"]: record for record in records}
     for record in search_records:
         if set(record) != SEARCH_RECORD_KEYS:
             failures.append(
                 f"Unexpected browser-search fields for {record.get('item_id')}"
             )
             continue
-        normalized = normalized_by_id.get(record["item_id"])
-        if normalized is None:
+        page_record = pages_by_id.get(record["item_id"])
+        if page_record is None:
             continue
         expected_search = {
-            "item_id": normalized["item_id"],
-            "slug": normalized["slug"],
-            "artist": normalized["artist"],
-            "artist_dates": normalized["artist_dates"],
-            "nationality": normalized["nationality"],
-            "title": normalized["title"],
+            "item_id": page_record["item_id"],
+            "slug": page_record["slug"],
+            "artist": page_record["artist"],
+            "artist_dates": page_record["artist_dates"],
+            "nationality": page_record["nationality"],
+            "title": page_record["title"],
             "image": (
-                f"images/collection/{normalized['slug']}.webp"
-                if normalized["has_image"]
+                page_record["image"]
+                if page_record["has_image"]
                 else None
             ),
         }
         if record != expected_search:
             failures.append(
-                f"Browser-search record differs from normalized source: "
+                f"Browser-search record differs from Markdown source: "
                 f"{record.get('item_id')}"
             )
 
     for record in records:
-        if record.get("has_image"):
-            image = (
-                PROJECT_ROOT
-                / "static"
-                / "images"
-                / "collection"
-                / f"{record['slug']}.webp"
-            )
+        if record["has_image"]:
+            image = PROJECT_ROOT / "static" / str(record["image"])
             if not image.is_file():
                 failures.append(f"Missing web image for {record['item_id']}")
 

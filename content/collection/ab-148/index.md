@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous english"
+title_sort = "churchyard"
+artist_initial = "A"
+title_initial = "C"
 item_id = "AB 148"
 inventory_id = "C-1799"
 artist = "Anonymous English"

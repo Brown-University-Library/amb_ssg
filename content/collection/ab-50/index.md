@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "after titian"
+title_sort = "marriage of saint catherine"
+artist_initial = "A"
+title_initial = "M"
 item_id = "AB 50"
 inventory_id = "C-1731"
 artist = "After Titian"

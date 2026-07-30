@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "agache, alfred"
+title_sort = "to whom the crown"
+artist_initial = "A"
+title_initial = "T"
 item_id = "AB 54"
 inventory_id = "none on file"
 artist = "Agache, Alfred"

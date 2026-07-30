@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "lawrence, sir thomas, circle of"
+title_sort = "anne king, countess of waldegrave"
+artist_initial = "L"
+title_initial = "A"
 item_id = "AB 23"
 inventory_id = "none on file"
 artist = "Lawrence, Sir Thomas, Circle of"

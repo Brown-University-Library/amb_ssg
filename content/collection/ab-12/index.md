@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "rymerswaele, circle of"
+title_sort = "the philosopher; or saint jerome in his study"
+artist_initial = "R"
+title_initial = "T"
 item_id = "AB 12"
 inventory_id = "C-1743"
 artist = "Rymerswaele, Circle of"

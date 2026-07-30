@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "guerra, achille"
+title_sort = "raphael, julius ii, and cardinal bembo"
+artist_initial = "G"
+title_initial = "R"
 item_id = "AB 80"
 inventory_id = "C-1721"
 artist = "Guerra, Achille"

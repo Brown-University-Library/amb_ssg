@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "kaemmerer, frederik hendrik"
+title_sort = "merveilleuses sous le directoire"
+artist_initial = "K"
+title_initial = "M"
 item_id = "AB 94"
 inventory_id = "none on file"
 artist = "Kaemmerer, Frederik Hendrik"

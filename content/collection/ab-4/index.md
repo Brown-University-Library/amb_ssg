@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous, florentine school"
+title_sort = "tobit and the angel"
+artist_initial = "A"
+title_initial = "T"
 item_id = "AB 4"
 inventory_id = "C-1737"
 artist = "Anonymous, Florentine School"

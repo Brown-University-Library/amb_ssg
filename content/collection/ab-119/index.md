@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous, american school"
+title_sort = "nicholas brown iii, 1792-1859"
+artist_initial = "A"
+title_initial = "N"
 item_id = "AB 119"
 inventory_id = "P-292"
 artist = "Anonymous, American School"

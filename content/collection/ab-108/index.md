@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "trayer, jean baptiste jules"
+title_sort = "the seamstress"
+artist_initial = "T"
+title_initial = "T"
 item_id = "AB 108"
 inventory_id = "C-1686"
 artist = "Trayer, Jean Baptiste Jules"

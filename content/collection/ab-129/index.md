@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "melchers, gari"
+title_sort = "schuyler hastings"
+artist_initial = "M"
+title_initial = "S"
 item_id = "AB 129"
 inventory_id = "none on file"
 artist = "Melchers, Gari"

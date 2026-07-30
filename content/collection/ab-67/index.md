@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "boulard, emile"
+title_sort = "an interior"
+artist_initial = "B"
+title_initial = "A"
 item_id = "AB 67"
 inventory_id = "C-1708"
 artist = "Boulard, Emile"

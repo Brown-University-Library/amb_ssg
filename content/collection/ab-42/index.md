@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "solimena, francesco"
+title_sort = "the circumcision"
+artist_initial = "S"
+title_initial = "T"
 item_id = "AB 42"
 inventory_id = "C-1763"
 artist = "Solimena, Francesco"

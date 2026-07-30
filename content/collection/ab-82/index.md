@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "guy, seymour j."
+title_sort = "portrait of carrie mathilde brown (senora bajnotti)"
+artist_initial = "G"
+title_initial = "P"
 item_id = "AB 82"
 inventory_id = "P-278"
 artist = "Guy, Seymour J."

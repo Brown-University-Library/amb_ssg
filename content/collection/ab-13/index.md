@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "after van dyck"
+title_sort = "holy family"
+artist_initial = "A"
+title_initial = "H"
 item_id = "AB 13"
 inventory_id = "C-1744"
 artist = "After Van Dyck"

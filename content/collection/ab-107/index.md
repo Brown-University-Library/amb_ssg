@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "rapetti"
+title_sort = "the bric-"
+artist_initial = "R"
+title_initial = "T"
 item_id = "AB 107"
 inventory_id = "C-1687"
 artist = "Rapetti"

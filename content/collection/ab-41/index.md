@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "after andrea del sarto"
+title_sort = "the holy family"
+artist_initial = "A"
+title_initial = "T"
 item_id = "AB 41"
 inventory_id = "none on file"
 artist = "After Andrea del Sarto"

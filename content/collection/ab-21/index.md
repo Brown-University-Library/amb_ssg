@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "kauffmann, angelica"
+title_sort = "zeuxis selecting models for his picture of helen of troy"
+artist_initial = "K"
+title_initial = "Z"
 item_id = "AB 21"
 inventory_id = "C-1747"
 artist = "Kauffmann, Angelica"

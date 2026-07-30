@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "calyer, vincent"
+title_sort = "general rush christopher hawkins  in zouave uniform"
+artist_initial = "C"
+title_initial = "G"
 item_id = "AB 155"
 inventory_id = "C-1774"
 artist = "Calyer, Vincent"

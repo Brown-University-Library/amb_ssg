@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "plauzeau, alfred"
+title_sort = "blanche of navarre imprisoned in the chateau d'orthez"
+artist_initial = "P"
+title_initial = "B"
 item_id = "AB 101"
 inventory_id = "C-1693"
 artist = "Plauzeau, Alfred"

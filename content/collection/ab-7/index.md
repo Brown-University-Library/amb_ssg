@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "after mola"
+title_sort = "mercury piping to the shepherds"
+artist_initial = "A"
+title_initial = "M"
 item_id = "AB 7"
 inventory_id = "none on file"
 artist = "After Mola"

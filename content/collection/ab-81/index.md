@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "guy, seymour j."
+title_sort = "portrait of annmary brown hawkins"
+artist_initial = "G"
+title_initial = "P"
 item_id = "AB 81"
 inventory_id = "none on file"
 artist = "Guy, Seymour J."

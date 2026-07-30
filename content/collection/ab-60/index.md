@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "befani, gennaro"
+title_sort = "leaving the church at loguirec"
+artist_initial = "B"
+title_initial = "L"
 item_id = "AB 60"
 inventory_id = "none on file"
 artist = "Befani, Gennaro"

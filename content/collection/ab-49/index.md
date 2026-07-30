@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous forgery"
+title_sort = "george washington"
+artist_initial = "A"
+title_initial = "G"
 item_id = "AB 49"
 inventory_id = "P-276"
 artist = "Anonymous forgery"

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "key, adriaen thomasz (attributed)"
+title_sort = "portrait of a lady"
+artist_initial = "K"
+title_initial = "P"
 item_id = "AB 29"
 inventory_id = "none on file"
 artist = "Key, Adriaen Thomasz (attributed)"

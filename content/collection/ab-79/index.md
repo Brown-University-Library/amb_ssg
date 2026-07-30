@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "gola, count emilio"
+title_sort = "a mandolin girl"
+artist_initial = "G"
+title_initial = "A"
 item_id = "AB 79"
 inventory_id = "none on file"
 artist = "Gola, Count Emilio"

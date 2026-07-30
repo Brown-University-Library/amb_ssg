@@ -1,15 +1,15 @@
-{% macro record_card(record, compact=false) %}
+{% macro record_card(page, compact=false) %}
 <article class="record-card{% if compact %} record-card--compact{% endif %}">
     <a
         class="record-card__image-link"
-        href="{{ get_url(path='collection/' ~ record.slug, trailing_slash=true) }}"
-        aria-label="View the catalog record for {{ record.title }}"
+        href="{{ page.permalink }}"
+        aria-label="View the catalog record for {{ page.title }}"
     >
-        {% if record.has_image %}
+        {% if page.extra.has_image %}
         <img
             class="record-card__image"
-            src="{{ get_url(path='images/collection/' ~ record.slug ~ '.webp') }}"
-            alt="{{ record.image_alt }}"
+            src="{{ get_url(path=page.extra.image) }}"
+            alt="{{ page.extra.image_alt }}"
             loading="lazy"
             decoding="async"
         >
@@ -18,13 +18,13 @@
         {% endif %}
     </a>
     <div class="record-card__body">
-        <p class="record-card__id">{{ record.item_id }}</p>
+        <p class="record-card__id">{{ page.extra.item_id }}</p>
         <h3 class="record-card__title">
-            <a href="{{ get_url(path='collection/' ~ record.slug, trailing_slash=true) }}">{{ record.title }}</a>
+            <a href="{{ page.permalink }}">{{ page.title }}</a>
         </h3>
-        <p class="record-card__artist">{{ record.artist }}</p>
-        {% if record.artist_dates %}
-        <p class="record-card__dates">{{ record.artist_dates }}</p>
+        <p class="record-card__artist">{{ page.extra.artist }}</p>
+        {% if page.extra.artist_dates %}
+        <p class="record-card__dates">{{ page.extra.artist_dates }}</p>
         {% endif %}
     </div>
 </article>

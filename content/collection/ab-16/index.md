@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous, flemish school"
+title_sort = "portrait of a lady"
+artist_initial = "A"
+title_initial = "P"
 item_id = "AB 16"
 inventory_id = "none on file"
 artist = "Anonymous, Flemish School"

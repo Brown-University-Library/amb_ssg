@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "cabi"
+title_sort = "l'ile de noirmantier"
+artist_initial = "C"
+title_initial = "L"
 item_id = "AB 71"
 inventory_id = "C-1712"
 artist = "Cabi"

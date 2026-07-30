@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "hoet, g., circle of"
+title_sort = "a scene from roman history"
+artist_initial = "H"
+title_initial = "A"
 item_id = "AB 45"
 inventory_id = "C-1766"
 artist = "Hoet, G., Circle of"

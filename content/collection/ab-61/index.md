@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "bianchi, mos"
+title_sort = "study of a girl seated"
+artist_initial = "B"
+title_initial = "S"
 item_id = "AB 61"
 inventory_id = "C-1728"
 artist = "Bianchi, Mos"

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "bouvier, pietro"
+title_sort = "salvator rosa improvising"
+artist_initial = "B"
+title_initial = "S"
 item_id = "AB 68"
 inventory_id = "C-1709"
 artist = "Bouvier, Pietro"

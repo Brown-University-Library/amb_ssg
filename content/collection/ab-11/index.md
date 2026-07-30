@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "drielst, egbert van"
+title_sort = "landscape with a distant church"
+artist_initial = "D"
+title_initial = "L"
 item_id = "AB 11"
 inventory_id = "C-1742"
 artist = "Drielst, Egbert van"

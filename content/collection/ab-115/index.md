@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "giordano, luca, school of"
+title_sort = "classic frieze"
+artist_initial = "G"
+title_initial = "C"
 item_id = "AB 115"
 inventory_id = "none on file"
 artist = "Giordano, Luca, School of"

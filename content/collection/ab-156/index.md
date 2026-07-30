@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "mullen"
+title_sort = "caricature of a hawkins zouave"
+artist_initial = "M"
+title_initial = "C"
 item_id = "AB 156"
 inventory_id = "C-1776"
 artist = "Mullen"

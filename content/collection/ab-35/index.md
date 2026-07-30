@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "patel, phillipe antoine, the younger"
+title_sort = "classical landscape"
+artist_initial = "P"
+title_initial = "C"
 item_id = "AB 35"
 inventory_id = "C-1756"
 artist = "Patel, Phillipe Antoine, the younger"

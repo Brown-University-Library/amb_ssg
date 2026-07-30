@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "diana, giacinto"
+title_sort = "a heavenly choir"
+artist_initial = "D"
+title_initial = "A"
 item_id = "AB 30"
 inventory_id = "none on file"
 artist = "Diana, Giacinto"

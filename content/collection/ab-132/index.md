@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "hart, william"
+title_sort = "landscape with four cows"
+artist_initial = "H"
+title_initial = "L"
 item_id = "AB 132"
 inventory_id = "C-1801"
 artist = "Hart, William"

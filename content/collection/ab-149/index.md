@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "dor"
+title_sort = "caricature of a wigged figure"
+artist_initial = "D"
+title_initial = "C"
 item_id = "AB 149"
 inventory_id = "C-1806"
 artist = "Dor"

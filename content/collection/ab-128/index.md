@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous, american school"
+title_sort = "frank marshall cushman, 1849-1933"
+artist_initial = "A"
+title_initial = "F"
 item_id = "AB 128"
 inventory_id = "P-299"
 artist = "Anonymous, American School"

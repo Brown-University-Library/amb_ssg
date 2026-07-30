@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "jun"
+title_sort = "a jewish rabbi"
+artist_initial = "J"
+title_initial = "A"
 item_id = "AB 93"
 inventory_id = "C-1700"
 artist = "Jun"

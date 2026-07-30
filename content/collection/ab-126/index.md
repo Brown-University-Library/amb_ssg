@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "gola, count emilio"
+title_sort = "carrie mathilde brown, (signora bajnotti), 1841-1892"
+artist_initial = "G"
+title_initial = "C"
 item_id = "AB 126"
 inventory_id = "P-295"
 artist = "Gola, Count Emilio"

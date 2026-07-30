@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "alvarez, luis"
+title_sort = "the toast"
+artist_initial = "A"
+title_initial = "T"
 item_id = "AB 55"
 inventory_id = "C-1723"
 artist = "Alvarez, Luis"

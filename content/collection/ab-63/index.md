@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "blanchi, p."
+title_sort = "music of the hunt"
+artist_initial = "B"
+title_initial = "M"
 item_id = "AB 63"
 inventory_id = "C-1730"
 artist = "Blanchi, P."

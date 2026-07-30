@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "lepici"
+title_sort = "portrait of a lady"
+artist_initial = "L"
+title_initial = "P"
 item_id = "AB 24"
 inventory_id = "C-1750"
 artist = "Lepici"

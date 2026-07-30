@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "weeks, edwin lord"
+title_sort = "crossing the desert"
+artist_initial = "W"
+title_initial = "C"
 item_id = "AB 109"
 inventory_id = "none on file"
 artist = "Weeks, Edwin Lord"

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "ostade, school of"
+title_sort = "itinerant musician"
+artist_initial = "O"
+title_initial = "I"
 item_id = "AB 34"
 inventory_id = "C-1785"
 artist = "Ostade, School of"

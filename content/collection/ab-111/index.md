@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "zona, antonio"
+title_sort = "a study of two women's heads"
+artist_initial = "Z"
+title_initial = "A"
 item_id = "AB 111"
 inventory_id = "C-1684"
 artist = "Zona, Antonio"

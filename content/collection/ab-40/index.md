@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "after rubens"
+title_sort = "the holy family with st. elizabeth and st. john the baptist"
+artist_initial = "A"
+title_initial = "T"
 item_id = "AB 40"
 inventory_id = "C-1761"
 artist = "After Rubens"

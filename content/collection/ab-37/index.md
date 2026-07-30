@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "pourbus, pieter, (attributed)"
+title_sort = "portrait of a lady"
+artist_initial = "P"
+title_initial = "P"
 item_id = "AB 37"
 inventory_id = "C-1754"
 artist = "Pourbus, Pieter, (attributed)"

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "leclerq, louis antoine"
+title_sort = "reverie"
+artist_initial = "L"
+title_initial = "R"
 item_id = "AB 95"
 inventory_id = "none on file"
 artist = "Leclerq, Louis Antoine"

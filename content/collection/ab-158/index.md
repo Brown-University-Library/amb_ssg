@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous"
+title_sort = "portait of mazzini"
+artist_initial = "A"
+title_initial = "P"
 item_id = "AB 158"
 inventory_id = "C-1777"
 artist = "Anonymous"

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "mignard, school of"
+title_sort = "portrait of a lady"
+artist_initial = "M"
+title_initial = "P"
 item_id = "AB 8"
 inventory_id = "C-1741"
 artist = "Mignard, School of"

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "melchers, gari"
+title_sort = "la brabanconne"
+artist_initial = "M"
+title_initial = "L"
 item_id = "AB 98"
 inventory_id = "none on file"
 artist = "Melchers, Gari"

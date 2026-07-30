@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "casado, del alisal, don jos"
+title_sort = "the favourite"
+artist_initial = "C"
+title_initial = "T"
 item_id = "AB 72"
 inventory_id = "none on file"
 artist = "Casado, del Alisal, Don Jos"

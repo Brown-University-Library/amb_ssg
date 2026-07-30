@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "matteis, paolo de"
+title_sort = "the assumption"
+artist_initial = "M"
+title_initial = "T"
 item_id = "AB 26"
 inventory_id = "none on file"
 artist = "Matteis, Paolo de"

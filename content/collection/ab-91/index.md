@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "johnson, eastman"
+title_sort = "a glass with the squire"
+artist_initial = "J"
+title_initial = "A"
 item_id = "AB 91"
 inventory_id = "C-1702"
 artist = "Johnson, Eastman"

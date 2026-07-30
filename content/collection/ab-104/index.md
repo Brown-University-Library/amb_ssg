@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "ranger, henry ward"
+title_sort = "quebec harbour"
+artist_initial = "R"
+title_initial = "Q"
 item_id = "AB 104"
 inventory_id = "C-1690"
 artist = "Ranger, Henry Ward"

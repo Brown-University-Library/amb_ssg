@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "ingham, charles cromwell"
+title_sort = "annmary brown"
+artist_initial = "I"
+title_initial = "A"
 item_id = "AB 124"
 inventory_id = "C-1767"
 artist = "Ingham, Charles Cromwell"

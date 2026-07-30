@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "benefial, marco, circle of"
+title_sort = "the vision of saint anthony"
+artist_initial = "B"
+title_initial = "T"
 item_id = "AB 6"
 inventory_id = "C-1739"
 artist = "Benefial, Marco, Circle of"

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "honthorst, gerrit van (attributed)"
+title_sort = "portrait of a girl"
+artist_initial = "H"
+title_initial = "P"
 item_id = "AB 32"
 inventory_id = "none on file"
 artist = "Honthorst, Gerrit van (attributed)"

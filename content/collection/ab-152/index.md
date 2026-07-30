@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "german school"
+title_sort = "priest and penitent"
+artist_initial = "G"
+title_initial = "P"
 item_id = "AB 152"
 inventory_id = "C-1773"
 artist = "German School"

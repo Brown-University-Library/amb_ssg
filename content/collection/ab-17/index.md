@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous"
+title_sort = "bust portrait of charles edward stuart (the young pretender), 1720-1788"
+artist_initial = "A"
+title_initial = "B"
 item_id = "AB 17"
 inventory_id = "P-274"
 artist = "Anonymous"

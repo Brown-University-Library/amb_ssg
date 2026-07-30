@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "nasmyth, patrick, circle of"
+title_sort = "the cross roads"
+artist_initial = "N"
+title_initial = "T"
 item_id = "AB 31"
 inventory_id = "C-1782"
 artist = "Nasmyth, Patrick, Circle of"

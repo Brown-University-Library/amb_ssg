@@ -2,7 +2,7 @@
 {% import "macros/collection.html" as collection_macros %}
 
 {% block amb_content %}
-{% set collection = load_data(path="data/collection_records.json") %}
+{% set records = section.pages | sort(attribute="extra.number") %}
 <header class="amb-page-header amb-page-header--wide">
     <p class="amb-eyebrow">The catalog</p>
     <h1>{{ section.title }}</h1>
@@ -15,10 +15,10 @@
     <a href="{{ get_url(path='search', trailing_slash=true) }}">Search</a>
 </nav>
 
-<p class="catalog-count">{{ collection.record_count }} works, in catalog-number order</p>
+<p class="catalog-count">{{ records | length }} works, in catalog-number order</p>
 <div class="record-grid">
-    {% for record in collection.records %}
-        {{ collection_macros::record_card(record=record) }}
+    {% for record in records %}
+        {{ collection_macros::record_card(page=record) }}
     {% endfor %}
 </div>
 {% endblock amb_content %}

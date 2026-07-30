@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "borgogna, juan de, school of"
+title_sort = "adoration of the magi"
+artist_initial = "B"
+title_initial = "A"
 item_id = "AB 44"
 inventory_id = "none on file"
 artist = "Borgogna, Juan de, School of"

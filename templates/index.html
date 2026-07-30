@@ -2,13 +2,14 @@
 {% import "macros/collection.html" as collection_macros %}
 
 {% block amb_content %}
-{% set collection = load_data(path="data/collection_records.json") %}
+{% set collection = get_section(path="collection/_index.md") %}
+{% set records = collection.pages | sort(attribute="extra.number") %}
 <section class="amb-hero">
     <div class="amb-hero__copy">
         <p class="amb-eyebrow">Brown University Library</p>
         <h1>Annmary Brown Memorial Collection</h1>
         <p class="amb-hero__lede">
-            Explore {{ collection.record_count }} European and American paintings
+            Explore {{ records | length }} European and American paintings
             collected by Civil War veteran, bibliophile, and collector Rush
             Christopher Hawkins.
         </p>
@@ -60,8 +61,8 @@
         <a href="{{ get_url(path='collection', trailing_slash=true) }}">View the full catalog</a>
     </div>
     <div class="record-grid">
-        {% for record in collection.records | slice(end=6) %}
-            {{ collection_macros::record_card(record=record) }}
+        {% for record in records | slice(end=6) %}
+            {{ collection_macros::record_card(page=record) }}
         {% endfor %}
     </div>
 </section>

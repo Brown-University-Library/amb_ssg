@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "plauzeau, alfred"
+title_sort = "poland partitioned"
+artist_initial = "P"
+title_initial = "P"
 item_id = "AB 102"
 inventory_id = "none on file"
 artist = "Plauzeau, Alfred"

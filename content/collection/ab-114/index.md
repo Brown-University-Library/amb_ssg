@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "stry, jacob van (attributed)"
+title_sort = "milking time"
+artist_initial = "S"
+title_initial = "M"
 item_id = "AB 114"
 inventory_id = "C-1676"
 artist = "Stry, Jacob van (attributed)"

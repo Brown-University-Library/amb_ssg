@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "ribera, jusepe de, school of"
+title_sort = "a pilgrim"
+artist_initial = "R"
+title_initial = "A"
 item_id = "AB 43"
 inventory_id = "not on file"
 artist = "Ribera, Jusepe de, School of"

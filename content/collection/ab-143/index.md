@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "kingsley, elbridge"
+title_sort = "new england elms"
+artist_initial = "K"
+title_initial = "N"
 item_id = "AB 143"
 inventory_id = "C-1798"
 artist = "Kingsley, Elbridge"

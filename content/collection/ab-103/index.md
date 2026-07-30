@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "previati, gaetano"
+title_sort = "mother and child"
+artist_initial = "P"
+title_initial = "M"
 item_id = "AB 103"
 inventory_id = "C-1691"
 artist = "Previati, Gaetano"

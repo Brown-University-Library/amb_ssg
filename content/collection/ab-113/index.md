@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "rosa, salvator, school of"
+title_sort = "charge by a squad of cavalry"
+artist_initial = "R"
+title_initial = "C"
 item_id = "AB 113"
 inventory_id = "C-1779"
 artist = "Rosa, Salvator, School of"

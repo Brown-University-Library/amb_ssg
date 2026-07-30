@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "milanese school"
+title_sort = "mary magdalene"
+artist_initial = "M"
+title_initial = "M"
 item_id = "AB 28"
 inventory_id = "P-262"
 artist = "Milanese School"

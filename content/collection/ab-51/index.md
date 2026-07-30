@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "vernet, school of"
+title_sort = "a bay on the mediterranean"
+artist_initial = "V"
+title_initial = "A"
 item_id = "AB 51"
 inventory_id = "C-1732"
 artist = "Vernet, School of"

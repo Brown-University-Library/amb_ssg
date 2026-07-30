@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "pinchart, emil august"
+title_sort = "the first tooth, new year's day"
+artist_initial = "P"
+title_initial = "T"
 item_id = "AB 100"
 inventory_id = "C-1694"
 artist = "Pinchart, Emil August"

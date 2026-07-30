@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous english"
+title_sort = "fishing boats"
+artist_initial = "A"
+title_initial = "F"
 item_id = "AB 146"
 inventory_id = "C-1812"
 artist = "Anonymous English"

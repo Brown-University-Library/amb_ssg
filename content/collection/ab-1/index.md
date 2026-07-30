@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous, flemish school"
+title_sort = "landscape with architecture"
+artist_initial = "A"
+title_initial = "L"
 item_id = "AB 1"
 inventory_id = "none on file"
 artist = "Anonymous, Flemish School"

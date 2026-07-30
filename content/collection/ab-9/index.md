@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "west, benjamin (attributed)"
+title_sort = "portrait of a nobleman"
+artist_initial = "W"
+title_initial = "P"
 item_id = "AB 9"
 inventory_id = "P-270"
 artist = "West, Benjamin (attributed)"

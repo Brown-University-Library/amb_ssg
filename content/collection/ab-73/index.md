@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "couture, thomas"
+title_sort = "a woman with a cat"
+artist_initial = "C"
+title_initial = "A"
 item_id = "AB 73"
 inventory_id = "none on file"
 artist = "Couture, Thomas"

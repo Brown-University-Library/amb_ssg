@@ -193,12 +193,18 @@ This section specializes the general directives above for the current AMB Zola r
   local output remains separate from `public/`.
 - Keep legacy conversion inputs and preservation image masters outside this
   repository.
-- The normalized public collection source is
-  `data/collection_records.json`.
-- Artwork Markdown under `content/collection/` and browser search data under
-  `static/search/` are generated from that normalized source. After changing
-  the canonical data, run `uv run ./scripts/render_collection.py`; do not edit
-  the generated representations independently.
+- Artwork Markdown under `content/collection/` is the maintained public
+  collection source. Its front matter drives the home, catalog, browse, and
+  item-detail views.
+- Keep each page’s artist/title sort and initial fields consistent with its
+  display artist and title; `scripts/validate.py source` checks them.
+- Browser search data under `static/search/collection-records.json` remains a
+  compact runtime representation. Keep its approved fields synchronized with
+  collection Markdown; `scripts/validate.py source` checks that relationship.
+- The sibling `../one_off_source_data_processing_stuff/` directory contains
+  migration inputs, selected source images, the normalized migration snapshot,
+  and preparation scripts. Ordinary editing, validation, preview, and builds
+  must not depend on that directory.
 - The importer uses a strict public-field allowlist. Do not replace it with a
   full-row import followed by field deletion.
 - Collection search is intentionally limited to artist, title, and
@@ -221,18 +227,14 @@ This section specializes the general directives above for the current AMB Zola r
 ### Useful paths
 
 - `zola.toml` — site and theme settings.
-- `content/` — narrative pages and generated artwork pages.
-- `data/collection_records.json` — normalized, public collection data.
-- `assets/` — source images retained for repeatable derivative generation.
-- `assets/image-derivatives.json` — content-based image reproducibility
-  manifest.
+- `content/` — narrative pages and maintained artwork pages.
 - `static/images/` — web-ready image derivatives.
+- `static/search/collection-records.json` — compact runtime search data kept in
+  sync with the maintained artwork pages.
 - `templates/` — AMB-owned layouts.
 - `static/js/collection-search-core.js` — testable search/index logic.
 - `static/js/collection-search.js` — browser search interface.
 - `scripts/test_search.js` — search-scope, substring, and ordering checks.
-- `scripts/render_collection.py` — regenerates artwork pages and search data.
-- `scripts/render_images.py` — regenerates web-ready images.
 - `scripts/validate.py` — source or built-site checks.
 
 ### Before handing off changes

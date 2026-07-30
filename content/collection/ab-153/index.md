@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous"
+title_sort = "scenes from the life of christ"
+artist_initial = "A"
+title_initial = "S"
 item_id = "AB 153"
 inventory_id = "C-1796"
 artist = "Anonymous"

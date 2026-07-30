@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "ballin, hugo"
+title_sort = "the viola player"
+artist_initial = "B"
+title_initial = "T"
 item_id = "AB 56"
 inventory_id = "none on file"
 artist = "Ballin, Hugo"

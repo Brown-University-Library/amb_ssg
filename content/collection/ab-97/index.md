@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "melchers, gari"
+title_sort = "fairy story"
+artist_initial = "M"
+title_initial = "F"
 item_id = "AB 97"
 inventory_id = "none on file"
 artist = "Melchers, Gari"

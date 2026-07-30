@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "beechey, sir william, r.a."
+title_sort = "portrait of an english officer"
+artist_initial = "B"
+title_initial = "P"
 item_id = "AB 3"
 inventory_id = "P-269"
 artist = "Beechey, Sir William, R.A."

@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "fox, john shirley, r.b.a."
+title_sort = "the country belle"
+artist_initial = "F"
+title_initial = "T"
 item_id = "AB 77"
 inventory_id = "none on file"
 artist = "Fox, John Shirley, R.B.A."

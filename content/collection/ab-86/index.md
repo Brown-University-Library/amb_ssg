@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "ingham, charles cromwell"
+title_sort = "portrait of mrs. nicholas brown (mother of annmary brown)"
+artist_initial = "I"
+title_initial = "P"
 item_id = "AB 86"
 inventory_id = "none on file"
 artist = "Ingham, Charles Cromwell"

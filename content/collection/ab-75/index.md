@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "damoye, emannuel"
+title_sort = "la thonet"
+artist_initial = "D"
+title_initial = "L"
 item_id = "AB 75"
 inventory_id = "none on file"
 artist = "Damoye, Emannuel"

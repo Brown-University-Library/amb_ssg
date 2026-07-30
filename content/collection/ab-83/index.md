@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "hicks, thomas"
+title_sort = "portrait study of a roman lady"
+artist_initial = "H"
+title_initial = "P"
 item_id = "AB 83"
 inventory_id = "none on file"
 artist = "Hicks, Thomas"

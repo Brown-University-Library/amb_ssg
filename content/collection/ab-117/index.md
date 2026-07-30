@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "birley, sir oswald"
+title_sort = "the chinese shawl"
+artist_initial = "B"
+title_initial = "T"
 item_id = "AB 117"
 inventory_id = "none on file"
 artist = "Birley, Sir Oswald"

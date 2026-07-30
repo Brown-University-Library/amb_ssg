@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous"
+title_sort = "admiral sir john hawkins, 1532-1595"
+artist_initial = "A"
+title_initial = "A"
 item_id = "AB 154"
 inventory_id = "C-1788"
 artist = "Anonymous"

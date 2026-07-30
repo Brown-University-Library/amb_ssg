@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "hart, william"
+title_sort = "lake with boats"
+artist_initial = "H"
+title_initial = "L"
 item_id = "AB 134"
 inventory_id = "C-1810"
 artist = "Hart, William"

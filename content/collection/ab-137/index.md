@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "hubert, jean-baptiste-louis"
+title_sort = "landscape: [building by stream?]"
+artist_initial = "H"
+title_initial = "L"
 item_id = "AB 137"
 inventory_id = "C-1800"
 artist = "Hubert, Jean-Baptiste-Louis"

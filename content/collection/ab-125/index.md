@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "gola, count emilio"
+title_sort = "carrie brown"
+artist_initial = "G"
+title_initial = "C"
 item_id = "AB 125"
 inventory_id = "C-1768"
 artist = "Gola, Count Emilio"

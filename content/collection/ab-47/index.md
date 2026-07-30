@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "tiarini, school of"
+title_sort = "mater dolorosa"
+artist_initial = "T"
+title_initial = "M"
 item_id = "AB 47"
 inventory_id = "C-1735"
 artist = "Tiarini, School of"

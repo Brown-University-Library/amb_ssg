@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "maffei, alessandro"
+title_sort = "the font in the baptistry at sienna"
+artist_initial = "M"
+title_initial = "T"
 item_id = "AB 144"
 inventory_id = "C-1532"
 artist = "Maffei, Alessandro"

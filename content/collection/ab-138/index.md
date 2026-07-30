@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "marko, c."
+title_sort = "waterfall"
+artist_initial = "M"
+title_initial = "W"
 item_id = "AB 138"
 inventory_id = "C-1811"
 artist = "Marko, C."

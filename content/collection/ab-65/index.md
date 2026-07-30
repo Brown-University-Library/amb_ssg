@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "blondel, jacob d."
+title_sort = "portrait of general hawkins"
+artist_initial = "B"
+title_initial = "P"
 item_id = "AB 65"
 inventory_id = "none on file"
 artist = "Blondel, Jacob D."

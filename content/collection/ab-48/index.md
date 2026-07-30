@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "venetian school"
+title_sort = "the assumption of the virgin"
+artist_initial = "V"
+title_initial = "T"
 item_id = "AB 48"
 inventory_id = "none on file"
 artist = "Venetian School"

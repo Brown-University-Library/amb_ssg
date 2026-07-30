@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "melchers, gari"
+title_sort = "portrait of general hawkins"
+artist_initial = "M"
+title_initial = "P"
 item_id = "AB 99"
 inventory_id = "none on file"
 artist = "Melchers, Gari"

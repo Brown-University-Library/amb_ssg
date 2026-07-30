@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "anonymous, american school"
+title_sort = "annmary brown"
+artist_initial = "A"
+title_initial = "A"
 item_id = "AB 120"
 inventory_id = "none on file"
 artist = "Anonymous, American School"

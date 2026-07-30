@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "neefs, pieter ii"
+title_sort = "interior of a gothic church"
+artist_initial = "N"
+title_initial = "I"
 item_id = "AB 33"
 inventory_id = "C-1784"
 artist = "Neefs, Pieter II"

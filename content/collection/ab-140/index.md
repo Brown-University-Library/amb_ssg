@@ -5,6 +5,10 @@ template = "collection-item.html"
 in_search_index = false
 
 [extra]
+artist_sort = "calame, alexandre"
+title_sort = "man by river"
+artist_initial = "C"
+title_initial = "M"
 item_id = "AB 140"
 inventory_id = "C-1813"
 artist = "Calame, Alexandre"
