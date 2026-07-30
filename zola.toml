@@ -1,4 +1,4 @@
-base_url = "https://library.brown.edu/collections/amb"
+base_url = "http://127.0.0.1/amb_ssg"
 title = "Annmary Brown Memorial Collection"
 description = "European and American paintings collected by Rush Christopher Hawkins for the Annmary Brown Memorial."
 default_language = "en"
