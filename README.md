@@ -28,6 +28,10 @@ Legacy conversion inputs, source images, the normalized migration snapshot, and 
 
 The collection search uses Elasticlunr, the Lunr-family search library used by Zola. It is collection-specific rather than a generic all-page index.
 
+This is a deliberate customization rather than Zola's standard built-in search-index workflow. The site keeps `build_search_index` disabled, so Zola does not create a saved Elasticlunr index. Instead, `scripts/rebuild_index_json.py` manually creates the compact approved records in `static/search/collection-records.json`; Zola copies that file into the built site, and the browser creates the Elasticlunr index in memory when the search page loads.
+
+The custom approach is necessary because Zola's built-in generator can include fixed page fields such as title, description, date, path, and rendered content, but not arbitrary collection fields from `[extra]`. AMB needs precise control over the searchable artist, title, and nationality fields while retaining separate item identifiers, artist dates, image paths, and slugs for result cards. AMB also supplements Elasticlunr word matching with legacy-compatible substring matching and orders results by artist rather than relevance.
+
 Only these fields are searchable:
 
 - artist;
