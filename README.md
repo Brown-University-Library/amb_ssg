@@ -1,5 +1,7 @@
 # Annmary Brown Memorial collection
 
+_Experimental work demo-ing converting an old php-based site using mysql, with search -- to a static-site._
+
 This repository intentionally contains both:
 
 - the editable source for a Zola site; and
